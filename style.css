@@ -1,0 +1,124 @@
+/*
+Theme Name: Naledi
+Theme URI: https://www.anarieldesign.com/free-full-site-editing-theme-naledi
+Author: Anariel Design
+Author URI: https://anarieldesign.com/
+Description: Naledi is a simple and clean WordPress Theme, designed for blog and personal websites. It’s inspired by nature and travel. Naledi is a full-site editing WordPress theme that comes with a set of templates and design settings that can be manipulated through Global Styles.
+Requires at least: 5.8
+Tested up to: 5.9
+Requires PHP: 7.2
+Version: 1.1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: naledi
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+Naledi is distributed under the terms of the GNU GPL.
+*/
+
+/*--------------------------------------------------------------
+# Shared Styles
+--------------------------------------------------------------*/
+
+@import "assets/css/style-shared.css";
+@import "assets/css/blocks.css";
+
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	-webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.7s; /* Firefox < 16 */
+     -ms-animation: fadein 0.7s; /* Internet Explorer */
+     -o-animation: fadein 0.7s; /* Opera < 12.1 */
+    animation: fadein 0.7s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*--------------------------------------------------------------
+# Font Size fallback
+--------------------------------------------------------------*/
+.has-extra-small-font-size {
+	font-size: var(--wp--preset--font-size--tiny);
+}
+
+
+/*--------------------------------------------------------------
+# Color fallbacks
+--------------------------------------------------------------*/
+.has-main-blue-background-color {
+	background-color: var(--wp--preset--color--primary);
+}
+
+.has-dark-blue-background-color {
+	background-color: var(--wp--preset--color--secondary);
+}
+
+.has-orange-background-color {
+	background-color: var(--wp--preset--color--tertiary);
+}
+
+.has-blue-background-color {
+	background-color: var(--wp--preset--color--quaternary);
+}
+
+.has-pink-background-color {
+	background-color: var(--wp--preset--color--quinary);
+}
+
+.has-purple-background-color {
+	background-color: var(--wp--preset--color--senary);
+}
+
+.has-main-blue-color {
+	color: var(--wp--preset--color--primary);
+}
+
+.has-dark-blue-color {
+	color: var(--wp--preset--color--secondary);
+}
+
+.has-orange-color {
+	color: var(--wp--preset--color--tertiary);
+}
+
+.has-blue-color {
+	color: var(--wp--preset--color--quaternary);
+}
+
+.has-pink-color {
+	color: var(--wp--preset--color--quinary);
+}
+
+.has-purple-color {
+	color: var(--wp--preset--color--senary);
+}
